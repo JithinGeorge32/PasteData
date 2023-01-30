@@ -62,6 +62,7 @@ namespace PasteData
             tbl.Columns.Add("Date");
             List<string> data = new List<string>(Clipboard.GetText().Split('\n'));
             bool firstRow = true;
+            bool test = false;
 
             if (data.Count > 0 && string.IsNullOrWhiteSpace(data[data.Count - 1]))
             {
